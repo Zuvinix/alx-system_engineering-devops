@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # list all my currently running processes
+processes=$(ps -eo pid,ppid,user,args --forest)
 
 # source: https://linuxize.com/post/ps-command-in-linux/
+echo "PID    PPID   USER       COMMAND"
+echo "--------------------------------"
+
+echo "$processes"
 ps -auxf
