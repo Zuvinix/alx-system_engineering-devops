@@ -1,4 +1,4 @@
-!/usr/bin/env ruby
+#!/usr/bin/env ruby
 
 # Get the argument passed to the script
 input = ARGV[0]
@@ -11,3 +11,4 @@ match = input.match(pattern)
 
 # Output the matched string or an empty string if no match is found
 puts match ? match[0] : ""
+
